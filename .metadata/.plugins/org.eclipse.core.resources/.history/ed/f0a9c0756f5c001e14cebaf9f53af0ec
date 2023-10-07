@@ -1,0 +1,45 @@
+package point;
+
+public class Point {
+	char nom;
+	int abs;
+	int ord;
+
+
+public void affiche ()
+	{
+		System.out.println(nom+"("+abs+","+ord+")");
+	}
+public void deplacer(int a,int b)
+	{
+		abs=abs+a;
+		ord=ord+b;
+	}
+public void rest()
+{
+	abs=0;
+	ord=0;
+	
+	
+}
+public Point()
+{
+	nom='o';
+	abs=0;
+	ord=0;
+}
+public Point(char nom, int abs, int ord)
+{
+	this.nom=nom;
+	this.abs=abs;
+	this.ord=ord;
+}
+public Point(Point p)
+{
+	nom=p.nom;
+	ord=p.ord;
+	abs=p.ord;
+}
+
+}
+

@@ -1,0 +1,35 @@
+package point;
+
+public class TestPoint {
+public static void main(String[] args) {
+	Point p1=new Point();
+	Point p2=new Point('A',3,5);
+	Point p3=new Point(p2);
+	p1.affiche();
+	p1.abs=2;
+	p1.ord=-1;
+	p1.nom='a';
+	p1.affiche();
+	p1.deplacer(1, -2);
+	p1.affiche();
+	p1.rest();
+	p1.affiche();
+	p2.affiche();
+	p3.affiche();
+	System.out.println(p1);
+	System.out.println(p2);
+	System.out.println(p3);
+	
+	System.out.println(p1==p2);
+	System.out.println(p1==p3);
+	p1.coïncide_V1 (p3);
+	System.out.println(p1.coïncide_V1 (p3));
+	Point.coincide_V(p3,p2);
+	
+	
+	
+	Cercle c1 = new Cercle(p1,10);
+	Cercle c2 = new Cercle(p2,12.5);
+	
+
+}}

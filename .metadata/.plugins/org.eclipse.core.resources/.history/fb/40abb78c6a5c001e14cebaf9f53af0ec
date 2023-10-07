@@ -1,0 +1,11 @@
+package point;
+
+public class TestPoint {
+	public static void main(String[] args)
+	Point p1=new Point('a',2,3);
+	p1.affiche();
+	p1.deplacer(4, 6);
+	p1.rest();
+	p1.affiche();
+
+}

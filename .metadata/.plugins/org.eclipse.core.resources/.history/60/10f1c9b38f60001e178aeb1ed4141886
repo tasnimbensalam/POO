@@ -1,0 +1,17 @@
+package point;
+
+public class cercle {
+		double r;
+		Point centre;
+public cercle(Point centre ,double r)
+{
+	this.centre=centre;
+	this.r=r;
+
+}
+public afficher()
+{
+	
+
+}
+}

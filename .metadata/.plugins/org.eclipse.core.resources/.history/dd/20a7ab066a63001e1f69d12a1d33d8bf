@@ -1,0 +1,84 @@
+package tp3;
+
+
+class Compte {
+		private int num;
+		Personne titulaire;
+		private double sold;
+		private double decouvertMax;
+		private double debitMax;
+		private static int count;
+			
+ 
+
+ Compte(Personne p)
+{
+	this.titulaire=p;
+	count++;
+	num=count;
+	this.debitMax=1000;
+	this.decouvertMax=800;
+}
+
+Compte(Personne p,int num,double solde,double debitMax,double decouvertMax)
+{
+	this.num=num;
+	this.titulaire=p;
+	this.sold=0;
+	this.debitMax=debitMax;
+	this.decouvertMax=decouvertMax;
+	
+}
+
+public String toString()
+{
+	 return "num : "+this.num+"\n titulaire :"+this.titulaire+"\n solde : "+this.sold+"\n debitMax : "+this.debitMax+"\n decouvertMax : "+this.decouvertMax;
+}
+
+public void crediter(double m)
+{
+	if(m>0)
+		
+	{this.sold+=m;}
+}
+private void debiter(double m)
+{
+ 	
+ if((this.sold-m)>0)
+ {
+	 this.sold -=m;
+ }
+}
+void retrait (double m)
+{
+	if(m<=this.debitMax)
+	{
+		debiter(m);
+	}
+	else
+	{
+		System.out.println("limite atteint");
+	}
+}
+boolean estadecouvert()
+{
+	return (this.sold<0);
+}
+double MontDecouvert() {
+	return this.sold;
+}
+static void virement(int m,Compte c,Compte c1)
+{
+	if(c.sold>=m)
+	{
+		c.debiter(m);
+		c1.crediter(m);
+	}
+	else
+	{
+		System.out.println("insuffisant");
+	} 
+}
+}
+
+

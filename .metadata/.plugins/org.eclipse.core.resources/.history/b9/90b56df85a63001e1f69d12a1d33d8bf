@@ -1,0 +1,29 @@
+package tp3;
+
+
+class Compte {
+		private int num;
+		Personne titulaire;
+		private double sold;
+		private double decouvertMax;
+		private double debitMax;
+			
+ 
+
+ compte(Personne p)
+{
+	
+}
+
+compte(personne p,double solde,double debitMax,double decouvertMax)
+{
+	num=1;
+	titulaire=p;
+	sold=solde;
+}
+ 
+ 
+ 
+}
+
+

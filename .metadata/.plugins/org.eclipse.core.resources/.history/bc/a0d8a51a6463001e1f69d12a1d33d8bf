@@ -1,0 +1,14 @@
+package tp3;
+
+
+
+import org.junit.jupiter.api.Test;
+public class CompteTest{
+public static void main(String[] args) {
+
+		Personne p=new Personne("tesnim","bensalem","adress");
+		Compte c=new Compte(p);
+		System.out.println(c);
+	
+
+}}

@@ -1,0 +1,13 @@
+package tp3;
+
+public class Personne {
+
+	
+	private char nom[];
+	private char prenom[];
+	private char adress[];
+	person(nom,prenom,adress);
+	getnom(nom);
+
+}
+

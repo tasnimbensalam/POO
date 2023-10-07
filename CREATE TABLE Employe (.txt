@@ -1,0 +1,15 @@
+CREATE TABLE Employe (
+    idEmp number(3),
+    nom VARCHAR(25) NOT NULL,
+    prenom VARCHAR(25),
+    DateEmbauche DATE DEFAULT SYSDATE,
+    idProj VARCHAR(3) ,
+    specialite number(2),
+    noTache number(2),
+    Confidentialite VARCHAR(25) ,
+    idDep number(2),
+    CONSTRAINT Employe_pk PRIMARY KEY (idEmp),
+    CONSTRAINT Employe_fk FOREIGN KEY (idProj) REFERENCES Projet (idProjet),
+    CONSTRAINT Employe_fk2 FOREIGN KEY (idDep) REFERENCES Departement (idDep),
+    CONSTRAINT Employe_ck CHECK (Confidentialite IN ('Secret', 'Top secret', 'Confidentiel'))
+);

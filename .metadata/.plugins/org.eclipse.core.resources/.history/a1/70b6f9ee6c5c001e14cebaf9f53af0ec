@@ -1,0 +1,31 @@
+package point;
+
+public class Point {
+	char nom;
+	int abs;
+	int ord;
+
+public Point(Point p1) {
+		// TODO Auto-generated constructor stub
+	}
+public void affiche ()
+	{
+		System.out.println(nom+"("+abs+","+ord+")");
+	}
+public void deplacer(int a,int b)
+	{
+		abs=abs+a;
+		ord=ord+b;
+	}
+public void rest()
+{
+	abs=0;
+	ord=0;
+	
+	
+}
+public Point(Point p)
+{
+
+}
+
