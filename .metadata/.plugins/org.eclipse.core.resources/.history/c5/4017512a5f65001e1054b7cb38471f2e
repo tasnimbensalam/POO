@@ -1,0 +1,14 @@
+package td1;
+
+class Livre {
+private String titre, auteur;
+private float nbPages;
+public void livre (String auteur, String titre) 
+{
+	this.auteur =auteur;
+    this.titre = titre;
+}
+public String getAuteur() {return this.auteur;}
+public void setNbPages (float nb) {
+nbPages = nb;}
+}

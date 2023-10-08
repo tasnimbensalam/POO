@@ -30,11 +30,12 @@ Compte(Personne p,int num,double solde,double debitMax,double decouvertMax)
 	this.decouvertMax=decouvertMax;
 	
 }
-/*double setsold()
+double setsold(double sold)
 {
 	this.sold=sold;
 	estadecouvert=estadecouvert();
-}*/
+	return debitMax;
+}
 public String toString()
 {
 	 return "num : "+this.num+"\n titulaire :"+this.titulaire+"\n solde : "+this.sold+"\n debitMax : "+this.debitMax+"\n decouvertMax : "+this.decouvertMax;

@@ -1,0 +1,61 @@
+package td1;
+
+class Livre {
+private String titre, auteur;
+private float nbPages;
+Livre (String auteur, String titre) 
+{
+	this.auteur =auteur;
+    this.titre = titre;
+}
+public String getauteur() {return this.auteur;}
+
+public float getnbpages() {return this.nbPages;}
+
+public void setnbpages (float nb) {
+	if(nb>20)
+	{nbPages = nb;}
+	else {
+		System.out.println("faible");
+	}
+	}
+
+
+public void setauteur (String auteur) {this.auteur=auteur;}
+
+public static void nafssauteur(Livre l,Livre l1)
+{ 
+	if(l.auteur.equals(l1.auteur))
+	{
+		System.out.println("ont le meme auteur");
+	}
+	else
+	{
+		System.out.println("n'ont pas le meme auteur");
+	}
+	}
+
+
+public String toString()
+{
+	return "Livre intitulé "+this.titre+" de "+this.auteur+" contenat "+this.nbPages;
+}
+public void decrire() {
+	System.out.println(this.toString());
+}
+Livre()
+{
+	this.titre = "";
+    this.auteur = "";
+	this.nbPages=0;
+}
+Livre(String titre, float nbPages) {
+    this.titre = titre;
+    this.nbPages = nbPages;
+    this.auteur = "";
+}
+Livre(String titre, String auteur, float nbPages) {
+    this.titre = titre;
+    this.auteur = auteur;
+    this.nbPages = nbPages;}
+}

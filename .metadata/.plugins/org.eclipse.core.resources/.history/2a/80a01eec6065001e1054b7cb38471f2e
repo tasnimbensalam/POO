@@ -1,0 +1,29 @@
+package td1;
+
+class Livre {
+private String titre, auteur;
+private float nbPages;
+Livre (String auteur, String titre) 
+{
+	this.auteur =auteur;
+    this.titre = titre;
+}
+public String getauteur() {return this.auteur;}
+public float getnbpages() {return this.nbPages;}
+public void setnbpages (float nb) {
+nbPages = nb;}
+public void setauteur (String auteur) {
+this.auteur=auteur;}
+
+public static void nafssauteur(Livre l,Livre l1)
+{ 
+	if(l.auteur==l1.auteur)
+	{
+		System.out.println("ont le meme auteur");
+	}
+	else
+	{
+		System.out.println("n'ont pas le meme auteur");
+	}
+	}
+}

@@ -1,0 +1,7 @@
+package td1;
+
+public class UtiliserLivre {
+	public static void main(String[] args) {
+    Livre l=new Livre("bensaleh","ali");
+    Livre l1=new Livre("sss","fff");
+}}
