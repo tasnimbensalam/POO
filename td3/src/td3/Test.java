@@ -4,7 +4,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		static int nb=4;
+		int nb=4;
 		float noteCTRL[]=new float[nb];
 		float noteExam[]=new float[5];
 		float t3[]=new float[nb];
