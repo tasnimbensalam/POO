@@ -1,7 +1,0 @@
-package td1;
-
-public class SecondMain {
-	public static void main(String[] args) {
-		
-	}
-}
