@@ -26,6 +26,7 @@ class JeuPrincipal {
 			
 			if(j instanceof JeuMulti) {
 				s+=((JeuMulti)j).getNbrj();//CASTINGGGGG
+				
 			}
 			
 			

@@ -58,7 +58,7 @@ class Test {
 
    Salarie smax=null;
    for(int i=0;i<tabSalarie.length;i++) {
-	   if(tabSalarie[i] instanceof Vendeur)
+	   if(tabSalarie[i] instanceof Vendeur )
 	   
 	   {if(smax==null) {
 		   smax=tabSalarie[i];

@@ -5,7 +5,7 @@ class Jeu {
 	private int id;
 	private String nom;
 	private int an;
-	private int nbrt;
+	
 	private int agemin;
 	private Editeur editeur;
 	Jeu(Editeur e){

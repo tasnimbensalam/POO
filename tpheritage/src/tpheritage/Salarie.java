@@ -40,7 +40,7 @@ public class Salarie {
 	}
 	double salaire()
 	{
-		if(this.recrutement>=2005) {
+		if(this.recrutement<=2005) {
 			return 400;
 		}
 		else {
