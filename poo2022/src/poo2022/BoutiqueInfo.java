@@ -1,5 +1,5 @@
 package poo2022;
-
+/*boutiqueinfo*/
 public class BoutiqueInfo {
 private MaterielInfo tab[]=new MaterielInfo[100];
 int nb=0;

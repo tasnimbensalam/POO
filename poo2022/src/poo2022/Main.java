@@ -19,7 +19,7 @@ public class Main {
 		} catch (ExceptionQte e) {
 			
 			System.out.println(e.getMessage());
-		}
+	}
 		try {
 			boutique.venteMateriel(1, 8);
 		} catch (ExceptionQte e) {
