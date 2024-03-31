@@ -32,8 +32,7 @@ public class Main {
         System.out.println("Montant total de la facture : " + facture.getMontantTotal());
 
         
-        facture.removeLigne(1);
-
+        facture.removeLigne(2);
         
         System.out.println("Stock après vente :");
         stock.sortStock();
