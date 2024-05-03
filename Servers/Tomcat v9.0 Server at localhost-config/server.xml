@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="spring_tp1" path="/spring_tp1" reloadable="true" source="org.eclipse.jst.jee.server:spring_tp1"/><Context docBase="TP3JSP" path="/TP3JSP" reloadable="true" source="org.eclipse.jst.jee.server:TP3JSP"/><Context docBase="EXERCICE2TP3" path="/EXERCICE2TP3" reloadable="true" source="org.eclipse.jst.jee.server:EXERCICE2TP3"/></Host>
+      <Context docBase="spring_tp1" path="/spring_tp1" reloadable="true" source="org.eclipse.jst.jee.server:spring_tp1"/><Context docBase="TP3JSP" path="/TP3JSP" reloadable="true" source="org.eclipse.jst.jee.server:TP3JSP"/><Context docBase="EXERCICE2TP3" path="/EXERCICE2TP3" reloadable="true" source="org.eclipse.jst.jee.server:EXERCICE2TP3"/><Context docBase="TP3_ex3" path="/TP3_ex3" reloadable="true" source="org.eclipse.jst.jee.server:TP3_ex3"/><Context docBase="tp4SPRINGBOOT" path="/tp4SPRINGBOOT" reloadable="true" source="org.eclipse.jst.jee.server:tp4SPRINGBOOT"/></Host>
     </Engine>
   </Service>
 </Server>

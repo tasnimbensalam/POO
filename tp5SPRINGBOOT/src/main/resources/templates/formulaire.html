@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Commande Form</title>
+</head>
+<body>
+<h1>Commande Form</h1>
+<form th:action="@{/commande}" method="post" th:object="${commande}">
+<label for="chambre">Chambre :</label>
+<input type="text" th:field="*{chambre}" /><br />
+<span th:if="${#fields.hasErrors('chambre')}" th:errors="*{chambre}"></span>
+<label for="nombreDeRepas">Nombre de repas :</label>
+<input type="text" th:field="*{nombreDeRepas}" /><br />
+<span th:if="${#fields.hasErrors('nombreDeRepas')}" th:errors="*{nombreDeRepas}"></span>
+<label for="heure">Heure de livraison (entre 6h et 10h) :</label>
+<input type="time" th:field="*{heure}" required /><br />
+<span th:if="${#fields.hasErrors('heure')}" th:errors="*{heure}"></span>
+<label for="commentaire">Commentaire :</label> <br />
+<textarea th:field="*{commentaires}" rows="10" cols="50"></textarea>
+<span th:if="${#fields.hasErrors('commentaires')}" th:errors="*{commentaires}"></span>
+<br />
+<input type="submit" value="Envoyer" />
+</form>
+</body>
+</html>
