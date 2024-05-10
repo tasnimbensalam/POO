@@ -46,7 +46,12 @@ public class PetitDejeuner {
 		super();
 		// TODO Auto-generated constructor stub
 		}
-
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id=id;
+	}
 	public int getChambre() {
 		return chambre;
 	}
